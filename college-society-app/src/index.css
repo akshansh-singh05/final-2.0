@@ -1,0 +1,31 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply transition-colors duration-500;
+  }
+  body {
+    @apply min-h-screen font-sans antialiased;
+  }
+}
+
+/* Gradient background transitions */
+html {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #fce7f3 100%);
+}
+
+html.dark {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
+}
+
+/* 8px spacing grid - base unit */
+:root {
+  --spacing-unit: 8px;
+}
